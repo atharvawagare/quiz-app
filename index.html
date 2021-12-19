@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div id="image-container">
+            <img src="./data/signup_img.png" id="signup_img">
+            <p id="image-credit">Image: <a href="https://undraw.co" target="new">unDraw.co</a></p>
+        </div>
+
+        <div id="form-container">
+            <form id="form" action="http://demo-testing.infinityfreeapp.com/quiz/signup.php" method="GET">
+                <!-- I am currently sending data on database in test_quiz table
+                you need to change this table in production to quiz table in the same database -->
+                <div id="signup-area">
+                    <p id="first-name-text">First Name:</p><input type="text" class="input-field" name="F_Name">
+                    <p id="last-name-text">Last Name:</p><input type="text" class="input-field" name="L_Name">
+                    <p id="e-mail-text">E-Mail ID:</p><input type="text" class="input-field" name="mail-id">
+                </div>
+                <input type="submit" name="submit_btn" value="Go" id="signup-btn">
+            </form>
+        </div>
+
+    </body>
+    
+</html>

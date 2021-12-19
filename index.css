@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px 0x;
+    padding: 0px 0px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* -------------Image Container----------------- */
+#image-container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-container #signup_img{
+    height: 350px;
+}
+
+#image-container #image-credit{
+    font-size: 10px;
+    font-family: Muli,sans-serif;
+}
+
+#image-container #image-credit a {
+    text-decoration: none;
+    color: #7064fc;
+    font-weight: bold;
+}
+
+/* -------------Ends----------------------- */
+
+/* ------Form Starts------------- */
+#form-container #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container #form #signup-area .input-field{
+    width: 150px;
+    border-radius: 10px;
+    border-color: grey;
+}
+
+#form-container #signup-btn{
+    background-color: #7064fc;
+    color: white;
+    width: 75px;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    margin-top: 20px;
+}
+/* -----------Form Ends--------------- */
