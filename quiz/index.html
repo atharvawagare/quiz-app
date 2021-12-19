@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            Quiz App
+        </title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="shortcut icon" href="https://atharvawagare.github.io/quiz-app/data/title_logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <script src="./index.js"></script>
+        <!-- <script src="questions/questions.json"></script> -->
+    </head>
+
+    <body>
+
+        <div id="info-area">
+            <h1 id="score">Score: 0</h1>
+            <h1 id="counter">Question Counter: 0/0</h1>
+        </div>
+
+        <div id="question-container">
+            <h2 id="question">This is Question?</h2>
+            <div class="choice-container"   >
+                <div class="choice-prefix" value="A">A</div>
+                <div class="choice-text" data-number="1">Choice 1</div>
+            </div>
+
+            <div class="choice-container">
+                <div class="choice-prefix" value="B">B</div>
+                <div class="choice-text" data-number="2">Choice 2</div>
+            </div>
+
+            <div class="choice-container">
+                <div class="choice-prefix" value="C">C</div>
+                <div class="choice-text" data-number="3">Choice 3</div>
+            </div>
+
+            <div class="choice-container">
+                <div class="choice-prefix" value="D">D</div>
+                <div class="choice-text" data-number="4">Choice 4</div>
+            </div>
+
+            <div id="solution-area">
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <!-- <a href="https://google.com"><button id="close-btn">Close</button></a> -->
+            <!-- <button onclick="getNewQuestion()" id="next-btn">Next</button> -->
+            <!-- <button onclick="reset_questions()" id="reset-btn">Reset</button> -->
+            <button onclick="submit()" disabled="true" id="submit-btn">Submit</button>
+        </div>
+
+        <div id="instruction-area"></div>
+
+
+
+
+    </body>
+
+
+</html>

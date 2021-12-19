@@ -1,0 +1,114 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(214, 225, 255);
+}
+
+/* -------------------Above Area---------------------------- */
+#info-area{
+    width: 75%;
+    height: auto;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+#info-area #score{
+    color: blue;
+    width: 50%;
+}
+
+#info-area #counter{
+    color: blue;
+    width: 50%;
+}
+
+/* -------------------Question Container---------------------------- */
+#question-container{
+    height: auto;
+    width: 75%;
+}
+
+#question-container #question{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#question-container .choice-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#question-container .choice-container:hover{
+    transform: translateY(-5px);
+    transition: 0.25s;
+}
+
+#question-container .choice-container .choice-prefix{
+    color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+#question-container .choice-container .choice-text{
+    margin-left: 10px;
+    background-color: white;
+    border: solid 2px blue;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    /* color: red; */
+}
+
+#question-container .choice-container .correct{
+    background-color: #28a745;
+    color: white;
+}
+
+#question-container  .choice-container .incorrect{
+    background-color: #dc3545;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons #close-btn, #next-btn, #reset-btn, #submit-btn{
+    color: blue;
+    margin-left: 20px;
+    padding: 5px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid 1px blue;
+}
+
+.buttons #close-btn:hover, #next-btn:hover, #reset-btn:hover, #submit-btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+#instruction-area{
+    height: 75px;
+    margin-top: 25px;
+    font-weight: bolder;
+    color: red;
+    font-size: 30px;
+}
